@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+    {%if res%}
+    <th>deptid</th>
+    <th>deptname</th>
+    <th>location</th>
+
+    {%for i in res%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.dname}}</td>
+        <td>{{i.location}}</td>
+       </tr>> 
+    {%endfor%}
+
+    {%endif%}
+
+    </table>
+
+    <table border="2">
+        {%if r%}
+        <th>empid</th>
+        <th>empname</th>
+        <th>phone</th>
+        <th>sal</th>
+        <th>deptno</th>
+        <th>email</th>
+        
+
+    
+        {%for i in r%}
+        <h1>{{r}}</h1>
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.ename}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.sal}}</td>
+            <td>{{i.deptno}}</td>
+            <td>{{i.email}}</td>
+           </tr>> 
+        {%endfor%}
+    
+        {%endif%}
+    
+        </table>
+
+</body>
+</html>
